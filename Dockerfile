@@ -9,6 +9,6 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 #add our source code into the image
 COPY . .
-EXPOSE 5000
+EXPOSE 8000
 # tell Docker what command we want to run when our image is executed inside a container
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
